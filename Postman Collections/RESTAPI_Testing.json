@@ -110,7 +110,7 @@
               "tests[\"Content-Type is present\"] = postman.getResponseHeader(\"Content-Type\");",
               "var contentTypeHeaderExists = responseHeaders.hasOwnProperty(\"Content-Type\");",
               " ",
-              "tests[\"Has Content-Type\"] = contentTypeHeaderExists;",
+              "//tests[\"Has Content-Type\"] = contentTypeHeaderExists;",
               " ",
               "if (contentTypeHeaderExists) {",
               "    tests[\"Content-Type is application/json\"] = ",
