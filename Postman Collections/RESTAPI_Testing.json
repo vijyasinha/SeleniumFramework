@@ -107,7 +107,7 @@
               "var data=JSON.parse(responseBody);",
               "tests[\"check url\"] = responseBody.has(url);",
               "",
-              "tests[\"Content-Type is present\"] = postman.getResponseHeader(\"Content-Type\");"
+              "tests[\"Content-Type is present\"] = postman.getResponseHeader(\"Content-Type1\");"
             ]
           }
         }
