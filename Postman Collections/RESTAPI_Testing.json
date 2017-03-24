@@ -105,7 +105,9 @@
             "exec": [
               "var url=\"https://httpbin.org/get\";",
               "var data=JSON.parse(responseBody);",
-              "tests[\"check url\"] = responseBody.has(url);"
+              "tests[\"check url\"] = responseBody.has(url);",
+              "",
+              "tests[\"Content-Type is present\"] = postman.getResponseHeader(\"Content-Type\");"
             ]
           }
         }
