@@ -149,8 +149,7 @@
               "    tests[\"Response status as Pass\"] = responseBody.has(\"pass\");",
               " tests[\"Body message contains\"] = responseBody.has(\"OAuth-1.0a signature verification was successful\");  ",
               "}",
-              "else",
-              "tests[\"fail\"]",
+              "",
               ""
             ]
           }
