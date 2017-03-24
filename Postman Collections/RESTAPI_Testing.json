@@ -114,7 +114,7 @@
               " ",
               "if (contentTypeHeaderExists) {",
               "    tests[\"Content-Type is application/json\"] = ",
-              "      responseHeaders[\"Content-Type\"].has(\"application/htl\");",
+              "      responseHeaders[\"Content-Type\"].has(\"application/JSON\");",
               "}"
             ]
           }
