@@ -128,6 +128,41 @@
         "description": "Testing the response time,response time,origin"
       },
       "response": []
+    },
+    {
+      "_postman_id": "eea29d62-ca51-a809-330c-54b96ffe6a53",
+      "name": "Authorization and body check",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "tests[\"Status code is 200\"] = responseCode.code === 200;",
+              "",
+              "",
+              "",
+              "var jsonData = JSON.parse(responseBody);",
+              "tests[\"Response status as Pass\"] = responseBody.has(\"pass\");",
+              ""
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "https://echo.getpostman.com/oauth1",
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "OAuth oauth_consumer_key=\"RKCGzna7bv9YD57c\",oauth_signature_method=\"HMAC-SHA1\",oauth_timestamp=\"1442394747\",oauth_nonce=\"UIGipk\",oauth_version=\"1.0\",oauth_signature=\"CaeyGPr2mns1WCq4Cpm5aLvz6Gs=\"",
+            "description": ""
+          }
+        ],
+        "body": {},
+        "description": "Authorization and body check"
+      },
+      "response": []
     }
   ]
 }
