@@ -76,7 +76,7 @@
           "script": {
             "type": "text/javascript",
             "exec": [
-              "var ORI=\"122.172.133.33\";",
+              "var ORI=\"122.172.146.56\";",
               "var jsonData = JSON.parse(responseBody);",
               "tests[\"Origin Check\"] = jsonData.origin === ORI;",
               "",
