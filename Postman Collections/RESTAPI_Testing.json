@@ -144,7 +144,7 @@
               "",
               "",
               "",
-              "if(responseBody.has(\"pass1\") && responseBody.has(\"OAuth-1.0a signature verification was successful\"))",
+              "if(responseBody.has(\"pass\") && responseBody.has(\"OAuth-1.0a signature verification was successful\"))",
               "{",
               "    tests[\"Response status as Pass\"] = responseBody.has(\"pass\");",
               " tests[\"Body message contains\"] = responseBody.has(\"OAuth-1.0a signature verification was successful\");  ",
