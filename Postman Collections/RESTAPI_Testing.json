@@ -142,7 +142,7 @@
               "",
               "var jsonData = JSON.parse(responseBody);",
               "tests[\"Response status as Pass\"] = responseBody.has(\"pass\");",
-              "tests[\"Body message contains\"]=jsonData.[\"message\"]===\"OAuth-1.0a signature verification was successful\" ; ",
+              "",
               "",
               "if(responseBody.has(\"pass\"))",
               "{",
