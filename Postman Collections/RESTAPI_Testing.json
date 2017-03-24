@@ -32,7 +32,7 @@
         }
       ],
       "request": {
-        "url": "https://httpbin.org/get",
+        "url": "{{url}}/get",
         "method": "GET",
         "header": [],
         "body": {},
