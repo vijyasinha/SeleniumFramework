@@ -1,0 +1,123 @@
+{
+  "variables": [],
+  "info": {
+    "name": "RESTAPI Testing",
+    "_postman_id": "f0ab213e-e032-5bd8-2490-24bd879a8a3e",
+    "description": "",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "_postman_id": "cc3de05f-4c84-5071-0c93-5fdc389e4716",
+      "name": "StatusCodeCheck",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "tests[\"Status code is 200\"] = responseCode.code === 200;",
+              "tests[\"Response time is less than 1000ms\"] = responseTime < 1000;",
+              "",
+              "var ORI=\"122.172.133.33\";",
+              "var jsonData = JSON.parse(responseBody);",
+              "",
+              "tests[\"Origin Check\"] = jsonData.origin === ORI;",
+              "",
+              "var url=\"https://httpbin.org/get\";",
+              "",
+              "tests[\"check url\"] = responseBody.has(url);"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "https://httpbin.org/get",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": "Testing the response time,response time,origin"
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "88c6c973-4a89-3b71-c78f-b1f803231915",
+      "name": "404 STATUS Check",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "",
+              "",
+              "",
+              "tests[\"404 NOT FOUND CODE\"] = responseCode.code === 404;",
+              "tests[\"Response time is less than 400ms\"] = responseTime < 350;"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "https://httpbin.org/get1",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": "Testing the response time,response time,origin"
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "27d8edaa-f884-ef25-ccc5-7f3a449a7e4b",
+      "name": "OriginCheck",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "var ORI=\"122.172.133.33\";",
+              "var jsonData = JSON.parse(responseBody);",
+              "tests[\"Origin Check\"] = jsonData.origin === ORI;",
+              "",
+              ""
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "https://httpbin.org/get",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": "Testing the response time,response time,origin"
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "9fdaa4ff-480d-b9e9-8ddd-64cc2b1171e8",
+      "name": "URLCheck",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "var url=\"https://httpbin.org/get\";",
+              "var data=JSON.parse(responseBody);",
+              "tests[\"check url\"] = responseBody.has(url);"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "https://httpbin.org/get",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": "Testing the response time,response time,origin"
+      },
+      "response": []
+    }
+  ]
+}
