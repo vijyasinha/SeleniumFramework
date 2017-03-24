@@ -108,7 +108,7 @@
               "tests[\"check url\"] = responseBody.has(url);",
               "",
               "tests[\"Content-Type is present\"] = postman.getResponseHeader(\"Content-Type\");",
-              "var contentTypeHeaderExists = responseHeaders.hasOwnProperty(\"Content-Type\");",
+              "//var contentTypeHeaderExists = responseHeaders.hasOwnProperty(\"Content-Type\");",
               " ",
               "tests[\"Has Content-Type\"] = contentTypeHeaderExists;",
               " ",
