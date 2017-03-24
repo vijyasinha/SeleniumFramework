@@ -140,10 +140,14 @@
             "exec": [
               "tests[\"Status code is 200\"] = responseCode.code === 200;",
               "",
-              "",
-              "",
               "var jsonData = JSON.parse(responseBody);",
               "tests[\"Response status as Pass\"] = responseBody.has(\"pass\");",
+              "",
+              "if(responseBody.has(\"pass\"))",
+              "{",
+              " tests[Body message contains]=jsonData.[\"message\"]===\"OAuth-1.0a signature verification was successful\" ;  ",
+              "}",
+              "",
               ""
             ]
           }
