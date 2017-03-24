@@ -24,7 +24,7 @@
               "",
               "tests[\"Origin Check\"] = jsonData.origin === ORI;",
               "",
-              "//var url=\"https://httpbin.org/get\";",
+              "var url=\"https://httpbin.org/get\";",
               "",
               "tests[\"check url\"] = responseBody.has({url});"
             ]
