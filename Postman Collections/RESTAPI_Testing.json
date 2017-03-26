@@ -19,7 +19,7 @@
               "tests[\"Status code is 200\"] = responseCode.code === 200;",
               "tests[\"Response time is less than 1000ms\"] = responseTime < 1000;",
               "",
-              "var ORI=\"122.172.239.109\";",
+              "var ORI=\"122.171.239.109\";",
               "var jsonData = JSON.parse(responseBody);",
               "",
               "tests[\"Origin Check\"] = jsonData.origin === ORI;",
