@@ -19,7 +19,7 @@
               "tests[\"Status code is 200\"] = responseCode.code === 200;",
               "tests[\"Response time is less than 1000ms\"] = responseTime < 1000;",
               "",
-              "var ORI=\"122.172.146.56\";",
+              "var ORI=\"122.172.239.109\";",
               "var jsonData = JSON.parse(responseBody);",
               "",
               "tests[\"Origin Check\"] = jsonData.origin === ORI;",
@@ -32,9 +32,24 @@
         }
       ],
       "request": {
+        "auth": {
+          "type": "basic",
+          "basic": {
+            "username": "postman",
+            "password": "password",
+            "saveHelperData": true,
+            "showPassword": false
+          }
+        },
         "url": "{{url}}/get",
         "method": "GET",
-        "header": [],
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Basic cG9zdG1hbjpwYXNzd29yZA==",
+            "description": ""
+          }
+        ],
         "body": {},
         "description": "Testing the response time,response time,origin"
       },
