@@ -53,7 +53,7 @@
               "",
               "",
               "tests[\"404 NOT FOUND CODE\"] = responseCode.code === 404;",
-              "tests[\"Response time is less than 400ms\"] = responseTime < 350;"
+              "tests[\"Response time is less than 400ms\"] = responseTime < 950;"
             ]
           }
         }
