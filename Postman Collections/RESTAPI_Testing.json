@@ -184,6 +184,29 @@
         "description": "Authorization and body check"
       },
       "response": []
+    },
+    {
+      "_postman_id": "d84837b0-6229-5c4c-69a3-7453926671f6",
+      "name": "paymentGateway",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "tests[\"Body matches string\"] = responseBody.has(\"paymentGateway\");"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "http://www.testing-whiz.com/blog/payment-gateway-testing-are-you-missing-any-of-these-5-essentials",
+        "method": "GET",
+        "header": [],
+        "body": {},
+        "description": "paymentGateway"
+      },
+      "response": []
     }
   ]
 }
