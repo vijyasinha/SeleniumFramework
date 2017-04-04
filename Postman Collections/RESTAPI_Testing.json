@@ -209,7 +209,9 @@
               "tests[\"Body3\"] = responseBody.has(\"Database\");",
               "",
               "tests[\"Content-Type is present\"] = postman.getResponseHeader(\"Content-Type\");",
-              ""
+              "",
+              "",
+              "tests[\"Response time is less than 200ms\"] = responseTime < 550;"
             ]
           }
         }
