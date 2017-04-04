@@ -217,7 +217,7 @@
         }
       ],
       "request": {
-        "url": "http://www.testing-whiz.com/blog/payment-gateway-testing-are-you-missing-any-of-these-5-essentials",
+        "url": "http://www.testing-whiz.com/blog/payment-gateway-testing-are-you-missing-any-of-these-5-essential",
         "method": "GET",
         "header": [],
         "body": {},
