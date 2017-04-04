@@ -206,7 +206,10 @@
               "",
               "tests[\"Body2\"] = responseBody.has(\"Integration\");",
               "",
-              "tests[\"Body3\"] = responseBody.has(\"Database\");"
+              "tests[\"Body3\"] = responseBody.has(\"Database\");",
+              "",
+              "tests[\"Content-Type is present\"] = postman.getResponseHeader(\"text/html; charset=utf-8\");",
+              ""
             ]
           }
         }
