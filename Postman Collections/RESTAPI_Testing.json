@@ -208,7 +208,7 @@
               "",
               "tests[\"Body3\"] = responseBody.has(\"Database\");",
               "",
-              "tests[\"Content-Type is present\"] = postman.getResponseHeader(\"text/html; charset=utf-8\");",
+              "tests[\"Content-Type is present\"] = postman.getResponseHeader(\"Content-Type\");",
               ""
             ]
           }
