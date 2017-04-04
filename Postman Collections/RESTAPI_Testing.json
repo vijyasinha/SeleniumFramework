@@ -194,7 +194,15 @@
           "script": {
             "type": "text/javascript",
             "exec": [
-              "tests[\"Body matches string\"] = responseBody.has(\"paymentGateway\");"
+              "                                                                                                        ",
+              "",
+              "tests[\"Status code is 200\"] = responseCode.code === 200;",
+              "",
+              "",
+              "",
+              "var jsonObject = xml2Json(responseBody);",
+              "",
+              "tests[\"Body matches string\"] = responseBody.has(\"Functional\");"
             ]
           }
         }
