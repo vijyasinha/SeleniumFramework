@@ -202,7 +202,11 @@
               "",
               "var jsonObject = xml2Json(responseBody);",
               "",
-              "tests[\"Body matches string\"] = responseBody.has(\"Functional\");"
+              "tests[\"Body1\"] = responseBody.has(\"Functionality\");",
+              "",
+              "tests[\"Body2\"] = responseBody.has(\"Integration\");",
+              "",
+              "tests[\"Body3\"] = responseBody.has(\"Database\");"
             ]
           }
         }
