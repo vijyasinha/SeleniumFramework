@@ -121,7 +121,7 @@
               "var url=\"https://httpbin.org/get\";",
               "var data=JSON.parse(responseBody);",
               "tests[\"check url\"] = responseBody.has(url);",
-              "test[\"check success code\"]=responseCode==200;",
+              "test[\"check success code\"]=responseCode.code==200;",
               "",
               "tests[\"Content-Type is present\"] = postman.getResponseHeader(\"Content-Type\");",
               "var contentTypeHeaderExists = responseHeaders.hasOwnProperty(\"Content-Type\");",
@@ -131,7 +131,9 @@
               "if (contentTypeHeaderExists) {",
               "    tests[\"Content-Type is application/json\"] = ",
               "      responseHeaders[\"Content-Type\"].has(\"application/json\");",
-              "}"
+              "}",
+              "",
+              "tests[\"Status code is 200\"] = responseCode.code === 200;"
             ]
           }
         }
