@@ -32,15 +32,6 @@
         }
       ],
       "request": {
-        "auth": {
-          "type": "basic",
-          "basic": {
-            "username": "postman",
-            "password": "password",
-            "saveHelperData": true,
-            "showPassword": false
-          }
-        },
         "url": "{{url}}/get",
         "method": "GET",
         "header": [
